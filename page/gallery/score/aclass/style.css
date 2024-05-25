@@ -95,8 +95,8 @@ body {
 }
 
 .text-cars {
-    margin-left: 316px;
-    text-align: start;
+    /* margin-left: 316px; */
+    text-align: center;
 }
 
 .text-cars span {
@@ -122,14 +122,14 @@ body {
     border-radius: 10px;
 }
 
-.back-button span a {
-    text-decoration: none;
-    color: black;
-}
-
 .back-button span:hover {
     background-color: #FD1B26;
     transition: 0.3s ease;
+}
+
+.back-button span a {
+    text-decoration: none;
+    color: black;
 }
 
 /* FOOTER */
@@ -183,7 +183,7 @@ footer ul li a:hover {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -310px;
+        right: -320px;
         height: 100vh;
         width: 300px;
         background-color: black;
@@ -220,16 +220,7 @@ footer ul li a:hover {
         font-size: 24px;
     }
 
-    .text-cars {
-        margin-left: 195px;
-        text-align: start;
-    }
 
-    .card-cars p {
-        margin-top: 5px;
-        width: 250px;
-        color: white;
-    }
 }
 
 @media (max-width: 430px) {
@@ -238,16 +229,6 @@ footer ul li a:hover {
         right: -50px;
     }
 
-    .text-cars {
-        margin-left: 110px;
-        text-align: start;
-    }
-
-    .card-cars p {
-        margin-top: 5px;
-        width: 250px;
-        color: white;
-    }
 
     
 }

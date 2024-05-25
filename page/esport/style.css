@@ -95,6 +95,13 @@ body {
     background-color: red;
     padding: 30px;
     margin: 0 300px 20px 300px;
+    width: 624px;
+}
+
+#box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sponsor-content {
@@ -160,7 +167,7 @@ footer ul li a:hover {
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: -310px;
+        right: -320px;
         height: 100vh;
         width: 300px;
         background-color: black;
@@ -201,6 +208,11 @@ footer ul li a:hover {
         background-color: red;
         padding: 30px;
         margin: 0 180px 20px 180px;
+        width: 370px;
+    }
+
+    .video-esport video {
+        width: 370px;
     }
 }
 
@@ -214,6 +226,7 @@ footer ul li a:hover {
         background-color: red;
         padding: 30px;
         margin: 0 40px 20px 40px;
+        width: 250px;
     }
 
     .video-esport video {
@@ -229,7 +242,7 @@ footer ul li a:hover {
         margin-inline-end: 0px;
         font-weight: bold;
         unicode-bidi: isolate;
-        font-size: 20px;
+        font-size: 18px;
     }
     
 }
