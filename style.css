@@ -369,6 +369,21 @@ footer ul li a:hover {
         text-align: justify;
     }
 
+    .download-section span{
+        /* background-color: red; */
+        width: 150px;
+        position: relative;
+        left: -25px;
+    }
+
+    .download-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        position: relative;
+        left: -20px;
+    }
+
     .download-section a {
         background-color: white;
         color: black;
