@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    background-image: url('../../Assets/BACK.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+#navbar-container a img{
+    height: 45px;
+    width: auto;
+}
+
+#navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+    background-color: black;
+    border-bottom: 1px solid #FD1B26;
+    height: 90px;
+}
+
+#resp-nav{
+    display: flex;
+    align-items: center;
+}
+
+#resp-nav li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#resp-nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#resp-nav li a:hover {
+    color: #FD1B26;
+}
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#logo-nav {
+    height: 10%;
+}
+
+/* HOMEPAGE */
+
+.header-text {
+    background-color: #FD1B26;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.header-pic {
+    background-image: url('../../Assets/GettyImages-1682522763.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.video-esport {
+    text-align: center;
+    padding: 50px;
+}
+
+.video-esport p {
+    color: white;
+}
+
+.video-esport video{
+    width: 500px;
+}
+
+.box {
+    background-color: red;
+    padding: 30px;
+    margin: 0 300px 20px 300px;
+}
+
+.sponsor-content {
+    margin: 70px 0;
+    text-align: center;
+}
+
+.sponsor-content h1 {
+    color: white;
+}
+
+.sponsor-content img {
+    width: 70%;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(../../Assets/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    border-top: 1px solid #FD1B26;
+}
+
+footer h3 {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer ul li {
+    text-align: center;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #FD1B26;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+
+    #resp-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -310px;
+        height: 100vh;
+        width: 300px;
+        background-color: black;
+        border-left: 1px solid #FD1B26;
+        padding: 100px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #resp-nav.active{
+        right: 0px;
+    }
+
+    #resp-nav li{
+        margin-bottom: 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .box {
+        background-color: red;
+        padding: 30px;
+        margin: 0 180px 20px 180px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    #resp-nav.active {
+        right: -50px;
+    }
+
+    .box {
+        background-color: red;
+        padding: 30px;
+        margin: 0 40px 20px 40px;
+    }
+
+    .video-esport video {
+        width: 300px;
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+        font-size: 20px;
+    }
+    
+}

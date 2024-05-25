@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    background-image: url('../../Assets/BACK.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+#navbar-container a img{
+    height: 45px;
+    width: auto;
+}
+
+#navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+    background-color: black;
+    border-bottom: 1px solid #FD1B26;
+    height: 90px;
+}
+
+#resp-nav{
+    display: flex;
+    align-items: center;
+}
+
+#resp-nav li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#resp-nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#resp-nav li a:hover {
+    color: #FD1B26;
+}
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#logo-nav {
+    height: 10%;
+}
+
+/* HOMEPAGE */
+
+.payment-container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.card-payment {
+    text-align: center;
+    border: 2px solid #FD1B26;
+    padding: 10px;
+    width: 350px;
+    color: white;
+    border-radius: 7px;
+}
+
+.card-payment h1 {
+    margin: 30px 0;
+}
+
+.card-payment h2 {
+    margin-bottom: 7px;
+}
+
+.card-payment h2 span {
+    font-size: 15px;
+}
+
+.card-payment p {
+    margin-bottom: 7px;
+}
+
+
+.card-payment ul {
+    padding: 5px 50px;
+}
+
+.card-payment ul li {
+    list-style: none;
+    text-align: start;
+    margin: 10px;
+}
+
+.button-join {
+    margin: 35px 0;
+}
+
+.button-join span{
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.button-join span:hover {
+    background-color: #FD1B26;
+    transition: 0.3s ease;
+}
+
+.button-join span a {
+    text-decoration: none;
+    color: black;
+}
+
+.register-fill {
+    /* background-color: red; */
+    text-align: center;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.register-fill h1 {
+    padding: 50px 0;
+}
+
+.register-fill div {
+    text-align: start;
+    padding: 0 390px;
+    padding-bottom: 20px;
+}
+
+
+.register-fill div div {
+    padding: 0;
+} 
+
+.register-fill div div input {
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    width: 500px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 0 17px;
+}
+
+.register-fill div div select {
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    width: 533px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 0 17px;
+}
+
+#terms-check {
+    display: flex;
+}
+
+#terms-check p {
+   margin: 15px;
+}
+
+#button-submit span{
+    background-color: white;
+    padding: 10px 13px;
+    border-radius: 3px;
+}
+
+#button-submit span:hover{
+    background-color: #FD1B26;
+    transition: 0.3s ease;
+}
+
+#button-submit span a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(../../Assets/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    border-top: 1px solid #FD1B26;
+}
+
+footer h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer ul li {
+    text-align: center;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: #FD1B26;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+
+    #resp-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -310px;
+        height: 100vh;
+        width: 300px;
+        background-color: black;
+        border-left: 1px solid #FD1B26;
+        padding: 100px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #resp-nav.active{
+        right: 0px;
+    }
+
+    #resp-nav li{
+        margin-bottom: 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .payment-container {
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-fill div {
+        text-align: start;
+        padding: 0 130px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    #resp-nav.active {
+        right: -50px;
+    }
+
+
+    .register-fill div {
+        text-align: start;
+        padding: 0 0 0 75px;
+        padding-bottom: 20px;
+    }
+
+    .register-fill div div input {
+        background-color: white;
+        border: 0;
+        border-radius: 2px;
+        width: 250px;
+        height: 40px;
+        margin-top: 5px;
+        padding: 0 17px;
+    }
+
+    .register-fill div div select {
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+        width: 283px;
+        height: 40px;
+        margin-top: 5px;
+        padding: 0 17px;
+    }
+    
+}
