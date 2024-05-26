@@ -160,6 +160,7 @@ body {
     width: 500px;
     height: 40px;
     margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0 17px;
 }
 
@@ -170,6 +171,7 @@ body {
     width: 533px;
     height: 40px;
     margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0 17px;
 }
 
@@ -182,21 +184,18 @@ body {
    margin: 15px;
 }
 
-#button-submit span{
+#button-submit button {
     background-color: white;
-    padding: 10px 13px;
     border-radius: 3px;
+    padding: 10px 13px;
 }
 
-#button-submit span:hover{
+#button-submit button:hover {
     background-color: #FD1B26;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
-#button-submit span a {
-    text-decoration: none;
-    color: black;
-}
 
 /* FOOTER */
 

@@ -14,55 +14,64 @@ if(close) {
     })
 }
 
-document.getElementById('submit').addEventListener('click', function(event) {
-    event.preventDefault();  
+function validateForm() {
+    let isValid = true;
 
-    
+    // Name validation
     const name = document.getElementById('name').value;
+    const nameError = document.getElementById('nameError');
+    if (name.trim() === "") {
+        nameError.textContent = "Name is required.";
+        isValid = false;
+    } else {
+        nameError.textContent = "";
+    }
+
+    // Email validation
     const email = document.getElementById('email').value;
-    const dob = document.getElementById('dob').value;
-    const gender = document.getElementById('gender').value;
-    const terms = document.getElementById('terms').checked;
-
-    
-    let valid = true;
-    let errorMessage = '';
-
-    
-    if (name.trim() === '') {
-        valid = false;
-        errorMessage += 'Name is required.\n';
-    }
-
-    
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailError = document.getElementById('emailError');
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (!emailPattern.test(email)) {
-        valid = false;
-        errorMessage += 'Please enter a valid email address.\n';
+        emailError.textContent = "Invalid email format.";
+        isValid = false;
+    } else {
+        emailError.textContent = "";
     }
 
-    
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(dob)) {
-        valid = false;
-        errorMessage += 'Date of Birth must be in YYYY-MM-DD format.\n';
+    // Date of Birth validation
+    const dob = document.getElementById('dob').value;
+    const dobError = document.getElementById('dobError');
+    if (dob === "") {
+        dobError.textContent = "Date of Birth is required.";
+        isValid = false;
+    } else {
+        dobError.textContent = "";
     }
 
-    
-    if (gender === '') {
-        valid = false;
-        errorMessage += 'Please select your gender.\n';
+    // Gender validation
+    const gender = document.getElementById('gender').value;
+    const genderError = document.getElementById('genderError');
+    if (gender === "") {
+        genderError.textContent = "Please select a gender.";
+        isValid = false;
+    } else {
+        genderError.textContent = "";
     }
 
-    
+    // Terms and Conditions validation
+    const terms = document.getElementById('terms').checked;
+    const termsError = document.getElementById('termsError');
     if (!terms) {
-        valid = false;
-        errorMessage += 'You must agree to the terms and conditions.\n';
+        alert("You must agree to the terms and conditions.");
+        isValid = false;
+    } else {
+        termsError.textContent = "";
     }
 
-
-    if (!valid) {
-        alert(errorMessage);
+    // Prevent form submission if validation fails
+    if (!isValid) {
+        return false;
     } else {
         alert('Form submitted successfully!');
     }
-});
+}
