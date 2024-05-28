@@ -160,6 +160,10 @@ body {
     padding: 0 17px;
 }
 
+.register-fill div div input:hover {
+    cursor: pointer;
+}
+
 .register-fill div div select {
     background-color: white;
     border: none;
@@ -171,6 +175,10 @@ body {
     padding: 0 17px;
 }
 
+.register-fill div div select:hover {
+    cursor: pointer;
+}
+
 .register {
     text-align: start;
     margin-bottom: 15px;
@@ -179,6 +187,10 @@ body {
 
 #terms-check {
    margin: 15px;
+}
+
+#terms-check input:hover {
+    cursor: pointer;
 }
 
 #button-submit button {
