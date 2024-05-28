@@ -177,13 +177,7 @@ body {
 }
 
 
-
 #terms-check {
-    display: flex;
-    flex-direction: row;
-}
-
-#terms-check p {
    margin: 15px;
 }
 
