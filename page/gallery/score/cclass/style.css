@@ -125,6 +125,7 @@ body {
 .back-button span:hover {
     background-color: #FD1B26;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .back-button span a {

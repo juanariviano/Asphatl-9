@@ -1,139 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asphatl 9</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8be52d934d.js" ></script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/8be52d934d.js"></script>
+  </head>
+  <body>
     <nav id="navbar-container">
-        <a href="../../index.html"><img src="../../Assets/logonav.png" alt="asphalt-logo"></a>
+      <a href="../../index.html"
+        ><img src="../../Assets/logonav.png" alt="asphalt-logo"
+      /></a>
 
-        <div>
-            <ul id="resp-nav">
-                <li><a href="../gallery/index.html">Gallery</a></li>
-                <li><a href="../news/index.html">News</a></li>
-                <li><a href="../esport/index.html">E-Sport</a></li>
-                <li><a href="../subscription/index.html">Subscription</a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        
+      <div>
+        <ul id="resp-nav">
+          <li><a href="../gallery/index.html">Gallery</a></li>
+          <li><a href="../news/index.html">News</a></li>
+          <li><a href="../esport/index.html">E-Sport</a></li>
+          <li><a href="../subscription/index.html">Subscription</a></li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
 
-        <div id="mobile">
-            <i id="bar" class="fa-solid fa-bars"></i>
-        </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
     </nav>
 
     <div class="payment-container">
-        <div class="card-payment">
-            <h1>Asphatl 9</h1>
-            <h2>Rp100.000<span>/month</span></h2>
-            <p>or pay annually and save 50%</p>
-            <h2>Rp600.000<span>/year</span></h2>
+      <div class="card-payment">
+        <h1>Content Creator Plan</h1>
+        <h2>$10<span>/month</span></h2>
+        <p>or pay annually and save 50%</p>
+        <h2>$60<span>/year</span></h2>
 
-            <ul>
-                <li>Play select new-release games for up to 10 hours - days before they launch.</li>
-                <hr>
-                <li>Unlock in-game member rewards.</li>
-                <hr>
-                <li>Enjoy unlimited access to a wide selection of our most popular and highly rated games.</li>
-            </ul>
-
-            <div class="button-join">
-                <span><a href="">Join Now</a></span>
-            </div>
-        </div>
-
-        <div class="card-payment">
-            <h1>Asphatl 9 Pro</h1>
-            <h2>Rp200.000<span>/month</span></h2>
-            <p>or pay annually and save 60%</p>
-            <h2>Rp960.000<span>/year</span></h2>
-
-            <ul>
-                <li>Play premium editions of select new-release games days before they launch.</li>
-                <hr>
-                <li>Unlock 100 unlimited cars.</li>
-                <hr>
-                <li>Get unlimited access to a library of premium edition Asphatl 9 : Rejends and fan-favorite series.</li>
-            </ul>
-
-            <div class="button-join">
-                <span><a href="">Join Now</a></span>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="register-fill">
-        <h1>REGISTER HERE</h1>
-    
-        <div>
-            <span>Name</span>
-            <div>
-                <input type="text" id="name" placeholder="Insert your name here...">
-                <div class="error" id="nameError"></div>
-            </div>
-        </div>
-    
-        <div>
-            <span>E-mail</span>
-            <div>
-                <input type="email" id="email" placeholder="Insert your email here...">
-                <div class="error" id="emailError"></div>
-            </div>
-        </div>
-    
-        <div>
-            <span>Date of Birth</span>
-            <div>
-                <input type="date" id="dob" placeholder="Insert your date of birth here...">
-                <div class="error" id="dobError"></div>
-            </div>
-        </div>
-    
-        <div>
-            <span>Gender</span>
-            <div>
-                <select id="gender">
-                    <option value="">Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-                <div class="error" id="genderError"></div>
-            </div>
-        </div>
-    
-        <div id="terms-check">
-            <input type="checkbox" id="terms">
-            <p>Agree to terms and conditions</p>
-            <div class="error" id="termsError"></div>
-        </div>
-    
-        <div id="button-submit">
-            <button onclick="validateForm()">Submit</button>
-        </div>
-    </div>
-    
-
-    <footer>
         <ul>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Social Media</a></li>
-            <li><a href="">Help</a></li>
+          <li>Upload unlimited videos.</li>
+          <hr />
+          <li>Access to advanced editing tools.</li>
+          <hr />
+          <li>Monetize your content and earn revenue.</li>
         </ul>
 
-        <h3>©️Asphatl 9 Copyright</h3>
+        <div class="button-join">
+          <span><a href="">Join Now</a></span>
+        </div>
+      </div>
+
+      <div class="card-payment">
+        <h1>Content Viewer Plan</h1>
+        <h2>$20<span>/month</span></h2>
+        <p>or pay annually and save 60%</p>
+        <h2>$96<span>/year</span></h2>
+
+        <ul>
+          <li>Ad-free viewing experience.</li>
+          <hr />
+          <li>Access to exclusive content and early releases.</li>
+          <hr />
+          <li>Support your favorite creators directly.</li>
+        </ul>
+
+        <div class="button-join">
+          <span><a href="">Join Now</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="register-fill">
+      <h1>REGISTER HERE</h1>
+
+      <div class="register">
+        <span>Name</span>
+        <div>
+          <input type="text" id="name" placeholder="Insert your name here..." />
+          <div class="error" id="nameError"></div>
+        </div>
+      </div>
+
+      <div class="register">
+        <span>E-mail</span>
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Insert your email here..."
+          />
+          <div class="error" id="emailError"></div>
+        </div>
+      </div>
+
+      <div class="register">
+        <span>Date of Birth</span>
+        <div>
+          <input
+            type="date"
+            id="dob"
+            placeholder="Insert your date of birth here..."
+          />
+          <div class="error" id="dobError"></div>
+        </div>
+      </div>
+
+      <div class="register">
+        <span>Gender</span>
+        <div>
+          <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <div class="error" id="genderError"></div>
+        </div>
+      </div>
+
+      <div id="terms-check">
+        <input type="checkbox" id="terms" />
+        <p>Agree to terms and conditions</p>
+        <div class="error" id="termsError"></div>
+      </div>
+
+      <div id="button-submit">
+        <button type="button" onclick="validateForm()">Submit</button>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Social Media</a></li>
+        <li><a href="">Help</a></li>
+      </ul>
+
+      <h3>©️Asphatl 9 Copyright</h3>
     </footer>
 
     <script src="../../script.js"></script>
-    
-</body>
+  </body>
 </html>

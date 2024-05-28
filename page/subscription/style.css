@@ -121,6 +121,7 @@ body {
 .button-join span:hover {
     background-color: #FD1B26;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .button-join span a {
@@ -130,6 +131,10 @@ body {
 
 .register-fill {
     /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding-bottom: 80px;
     color: white;
@@ -139,15 +144,6 @@ body {
     padding: 50px 0;
 }
 
-.register-fill div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: start;
-    /* padding: 0 390px; */
-    padding-bottom: 20px;
-    justify-content: center;
-}
 
 .register-fill div div {
     padding: 0;
@@ -160,7 +156,7 @@ body {
     width: 500px;
     height: 40px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     padding: 0 17px;
 }
 
@@ -174,6 +170,13 @@ body {
     margin-bottom: 5px;
     padding: 0 17px;
 }
+
+.register {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+
 
 #terms-check {
     display: flex;
@@ -297,7 +300,6 @@ footer ul li a:hover {
 
     .register-fill div {
         text-align: start;
-        padding: 0 130px;
         padding-bottom: 20px;
     }
 
@@ -354,6 +356,15 @@ footer ul li a:hover {
         height: 40px;
         margin-top: 5px;
         padding: 0 17px;
+    }
+
+    .card-payment {
+        text-align: center;
+        border: 2px solid #FD1B26;
+        padding: 10px;
+        width: 250px;
+        color: white;
+        border-radius: 7px;
     }
     
 }

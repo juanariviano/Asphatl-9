@@ -20,8 +20,8 @@ function validateForm() {
     // Name validation
     const name = document.getElementById('name').value;
     const nameError = document.getElementById('nameError');
-    if (name.trim() === "") {
-        nameError.textContent = "Name is required.";
+    if (name.length <= 10) {
+        nameError.textContent = "Name must be more than 10 words.";
         isValid = false;
     } else {
         nameError.textContent = "";
@@ -30,9 +30,9 @@ function validateForm() {
     // Email validation
     const email = document.getElementById('email').value;
     const emailError = document.getElementById('emailError');
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@gmail\.com$/;
     if (!emailPattern.test(email)) {
-        emailError.textContent = "Invalid email format.";
+        emailError.textContent = "Email must end with @gmail.com.";
         isValid = false;
     } else {
         emailError.textContent = "";
@@ -41,8 +41,10 @@ function validateForm() {
     // Date of Birth validation
     const dob = document.getElementById('dob').value;
     const dobError = document.getElementById('dobError');
-    if (dob === "") {
-        dobError.textContent = "Date of Birth is required.";
+    const currentYear = new Date().getFullYear();
+    const birthYear = new Date(dob).getFullYear();
+    if (dob === "" || (currentYear - birthYear) < 17) {
+        dobError.textContent = "You must be at least 17 years old.";
         isValid = false;
     } else {
         dobError.textContent = "";
@@ -73,5 +75,20 @@ function validateForm() {
         return false;
     } else {
         alert('Form submitted successfully!');
+        resetFormFields(); // Reset the form
     }
 }
+
+function resetFormFields() {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('dob').value = '';
+    document.getElementById('gender').value = '';
+    document.getElementById('terms').checked = false;
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('dobError').textContent = '';
+    document.getElementById('genderError').textContent = '';
+    document.getElementById('termsError').textContent = '';
+}
+
